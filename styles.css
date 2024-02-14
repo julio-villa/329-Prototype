@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+p {
+    margin-inline: -30px;
+}
+
+.container {
+    max-width: 1500px; /* Adjusted for wider cards */
+    margin: 50px auto;
+    padding: 0; /* Removed 20px padding to allow cards to use full container width */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card {
+    /* width: calc(25% - 170px); */
+    width: 13%;
+    margin: 0 30px; /* Adjusted to create the desired gap between cards */
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #d9d9d9; /* Card background */
+    padding-inline: 45px; /* No padding inside the card */
+    padding-top: 10px;
+    margin-bottom: 20px; 
+}
+
+.card-image img {
+    width: 100%; /* Image will occupy the full width of the card */
+    display: block; /* Ensures there's no space below the image */
+}
+
+.card-title {
+    text-align: center;
+    font-size: 17.2px; /* Set the font size for the title */
+    margin-top: 10px; /* Space between the image box and the title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 20px;
+}

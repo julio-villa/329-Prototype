@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Movie/Show Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Movie/Show Recommendations</h2>
+            <select id="searchType">
+                <option value="movie">Movie</option>
+                <option value="tv">Series</option>
+            </select>
+            <select id="searchCategory">
+                <option value="title">Title</option>
+                <option value="genre">Genre</option>
+                <option value="actor">Actor</option>
+                <option value="keyword">Keyword</option>
+            </select>
+            <input type="text" id="searchInput" placeholder="Enter search term">
+            <input type="button" value="Search" onclick="search()">
+        </div>
+        <div id="results"></div>
+    </div>
+</body>
+
+</html>
